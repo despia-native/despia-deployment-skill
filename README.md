@@ -84,6 +84,12 @@ It works out the rest from your Despia project.
 
 **Claude apps** — zip the `plugins/despia-launch/skills/despia-launch` folder and upload it under Settings → Capabilities → Skills.
 
+**Any other agent** — one command installs it for Amp, Cline, Codex, Cursor, Antigravity and a dozen more, not just Claude Code.
+
+```bash
+npx skills add despia-native/despia-deployment-skill
+```
+
 **SkillUse** — this repository is itself a SkillUse registry.
 
 ```bash
