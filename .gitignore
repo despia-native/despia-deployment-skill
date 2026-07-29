@@ -1,0 +1,8 @@
+# Artifacts from installing this skill into a working copy for testing.
+# The skill's source of truth is plugins/despia-launch/skills/, not these.
+.agents/
+.claude/
+skills-lock.json
+
+node_modules/
+.DS_Store
