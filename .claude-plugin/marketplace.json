@@ -1,6 +1,6 @@
 {
   "name": "despia",
-  "description": "Agent skills for shipping Despia apps to the App Store and Google Play",
+  "description": "Agent skills for shipping and running Despia apps on the App Store and Google Play",
   "owner": {
     "name": "Despia Native",
     "email": "humans@despia.com",
@@ -8,9 +8,10 @@
   },
   "plugins": [
     {
-      "name": "despia-store-provisioning",
-      "source": "./plugins/despia-store-provisioning",
-      "description": "Walks a Despia app from a finished build to a live store listing: bundle IDs, App Groups and capabilities, APNs and App Store Connect API keys, the Play service account, OneSignal push, RevenueCat purchases, store copy and screenshots, privacy declarations, submission, and rejection diagnosis.",
+      "name": "despia-launch",
+      "displayName": "Despia Launch Agent",
+      "source": "./plugins/despia-launch",
+      "description": "Takes a Despia app from a finished build to a live, maintained store listing: account provisioning, push and in-app purchases, store metadata and screenshots, privacy declarations, submission, rejection handling, and post-launch upkeep.",
       "version": "1.0.0",
       "author": {
         "name": "Despia Native",
@@ -24,9 +25,13 @@
         "ios",
         "android",
         "provisioning",
-        "code-signing",
+        "app-launch",
+        "aso",
         "despia"
       ]
     }
-  ]
+  ],
+  "renames": {
+    "despia-store-provisioning": "despia-launch"
+  }
 }

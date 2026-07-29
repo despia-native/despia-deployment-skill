@@ -1,8 +1,8 @@
 {
-  "name": "despia-store-provisioning",
-  "displayName": "Despia Store Provisioning",
+  "name": "despia-launch",
+  "displayName": "Despia Launch Agent",
   "version": "1.0.0",
-  "description": "Walks a Despia app from a finished build to a live store listing: bundle IDs, App Groups and capabilities, APNs and App Store Connect API keys, the Play service account, OneSignal push, RevenueCat purchases, store copy and screenshots, privacy declarations, submission, and rejection diagnosis.",
+  "description": "Takes a Despia app from a finished build to a live, maintained store listing: account provisioning, push and in-app purchases, store metadata and screenshots, privacy declarations, submission, rejection handling, and post-launch upkeep.",
   "author": {
     "name": "Despia Native",
     "email": "humans@despia.com",
@@ -18,6 +18,8 @@
     "android",
     "provisioning",
     "code-signing",
+    "app-launch",
+    "aso",
     "onesignal",
     "revenuecat",
     "despia"
