@@ -10,6 +10,7 @@
   },
   "homepage": "https://setup.despia.com",
   "repository": "https://github.com/despia-native/despia-deployment-skill",
+  "license": "MIT",
   "keywords": [
     "app-store",
     "app-store-connect",

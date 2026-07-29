@@ -2,7 +2,7 @@
 
 Most web-to-app platforms will happily sell you a publishing package. Store submission assistance, provisioning setup, "done for you" launch support. It runs well over $1,000, and what you get is someone clicking through consoles you could have clicked through yourself, if only you knew which buttons mattered.
 
-Despia gives you the knowledge instead. This is an AI agent skill that walks the entire path from a finished web app to a live store listing, in your browser, with you. No agency. No retainer. No waiting three days for someone to reply to your email about a bundle ID.
+Despia gives you the knowledge instead. This is **Despia Launch Agent**, an AI agent skill that walks the entire path from a finished web app to a live store listing, in your browser, with you. No agency. No retainer. No waiting three days for someone to reply to your email about a bundle ID.
 
 **You keep the money and you keep the control.**
 
@@ -118,3 +118,7 @@ So the worst case here is not "stuck forever". It is "email a human and carry on
 
 - Free human developer email support: [humans@despia.com](mailto:humans@despia.com)
 - Docs at setup.despia.com
+
+## License
+
+MIT. See [LICENSE](LICENSE). Use it, fork it, adapt it for your own stack.
