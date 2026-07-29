@@ -1,0 +1,26 @@
+name: Validate skill
+
+# This repo is the single source of truth for every channel that ships the
+# skill. Pushing here is the publish action - there is nothing else to run.
+# This job guards that push, so a broken manifest can never reach the branch
+# consumers install from.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate manifests, frontmatter, and references
+        run: python3 scripts/validate_skill.py

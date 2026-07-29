@@ -84,6 +84,14 @@ It works out the rest from your Despia project.
 
 **Claude apps** — zip the `plugins/despia-launch/skills/despia-launch` folder and upload it under Settings → Capabilities → Skills.
 
+**SkillUse** — this repository is itself a SkillUse registry.
+
+```bash
+npm install -g skilluse
+skilluse repo add despia-native/despia-deployment-skill
+skilluse install despia-launch
+```
+
 **Copy it in by hand** — if you would rather not install a plugin.
 
 ```bash
