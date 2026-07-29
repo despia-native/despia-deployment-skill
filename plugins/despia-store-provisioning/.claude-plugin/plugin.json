@@ -1,0 +1,25 @@
+{
+  "name": "despia-store-provisioning",
+  "displayName": "Despia Store Provisioning",
+  "version": "1.0.0",
+  "description": "Walks a Despia app from a finished build to a live store listing: bundle IDs, App Groups and capabilities, APNs and App Store Connect API keys, the Play service account, OneSignal push, RevenueCat purchases, store copy and screenshots, privacy declarations, submission, and rejection diagnosis.",
+  "author": {
+    "name": "Despia Native",
+    "email": "humans@despia.com",
+    "url": "https://github.com/despia-native"
+  },
+  "homepage": "https://setup.despia.com",
+  "repository": "https://github.com/despia-native/despia-deployment-skill",
+  "keywords": [
+    "app-store",
+    "app-store-connect",
+    "google-play",
+    "ios",
+    "android",
+    "provisioning",
+    "code-signing",
+    "onesignal",
+    "revenuecat",
+    "despia"
+  ]
+}

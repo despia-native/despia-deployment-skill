@@ -75,19 +75,26 @@ It works out the rest from your Despia project.
 
 ### Install it
 
-**Claude Code** — drop the folder in your skills directory and it loads on the next session.
+**Claude Code** — two commands, and you get updates automatically whenever we improve it.
+
+```
+/plugin marketplace add despia-native/despia-deployment-skill
+/plugin install despia-store-provisioning@despia
+```
+
+**Claude apps** — zip the `plugins/despia-store-provisioning/skills/despia-store-provisioning` folder and upload it under Settings → Capabilities → Skills.
+
+**Copy it in by hand** — if you would rather not install a plugin.
 
 ```bash
 git clone https://github.com/despia-native/despia-deployment-skill.git
 mkdir -p ~/.claude/skills
-cp -r despia-deployment-skill/despia-store-provisioning ~/.claude/skills/
+cp -r despia-deployment-skill/plugins/despia-store-provisioning/skills/despia-store-provisioning ~/.claude/skills/
 ```
 
 Use `.claude/skills/` inside a project instead of `~/.claude/skills/` if you only want it for that project.
 
-**Claude apps** — zip the `despia-store-provisioning` folder and upload it under Settings → Capabilities → Skills.
-
-**Anything else that reads agent skills** — point it at `despia-store-provisioning/SKILL.md`. The reference files load themselves as they're needed, so nothing else to configure.
+**Anything else that reads agent skills** — point it at `SKILL.md`. This follows the [Agent Skills](https://agentskills.io) open standard, and the reference files load themselves as they are needed, so there is nothing else to configure.
 
 To check it took, ask your agent *"what skills do you have?"* — `despia-store-provisioning` should be in the list.
 
